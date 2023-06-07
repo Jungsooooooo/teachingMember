@@ -37,4 +37,10 @@ public class TestRestController {
 		
 		return new ResponseEntity<>(testResponseDto, HttpStatus.CREATED);
 	}
+	
+	@GetMapping("/jpa")
+	public ResponseEntity<?> getTestJpa(@RequestBody TestRequestDto testRequestDto){
+		
+		return null;
+	}
 }
